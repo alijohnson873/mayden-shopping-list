@@ -1,0 +1,27 @@
+body {
+    font-family: arial;
+}
+.shopping-list-wrapper {
+    margin: 10px;
+}
+.shopping-items-wrapper {
+    margin-top: 15px;
+}
+.shopping-list-wrapper label {
+    display: block;
+    margin-bottom: 8px;
+}
+.shopping-item {
+    margin: 5px 0px;
+}
+.shopping-item h4 {
+    margin: 5px;
+}
+
+.shopping-item button {
+    height: 20px;
+    margin: 5px;
+}
+.is-done {
+    text-decoration: line-through
+}
