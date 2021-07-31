@@ -12,7 +12,6 @@ const ShoppingList = () => {
     useEffect(() => {
         updateShoppingListArray(JSON.parse(window.localStorage.getItem('shoppingListArray')));
     }, []);
-   
     
     const handleSubmit = (e) => {
         e.preventDefault() 
