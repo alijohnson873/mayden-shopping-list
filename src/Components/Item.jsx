@@ -7,7 +7,7 @@ const Item = (props) => {
 
     return (
         <div className="shopping-item">
-            <h4 className={isDone && 'is-done'}>{props.item}</h4>   
+            <h4 className={isDone ? 'is-done' : undefined}>{props.item}</h4>   
             <button onClick={handleMarkAsDone}>Done</button> 
             <button onClick={()=>props.handleMoveUp(props.item, props.index)}><FaArrowUp/></button>  
             <button onClick={()=>props.handleMoveDown(props.item, props.index)}><FaArrowDown/></button> 
