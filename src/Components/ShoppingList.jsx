@@ -7,11 +7,12 @@ const ShoppingList = () => {
     const [shoppingListArray, updateShoppingListArray] = useState(['Apple', 'Kimchi', 'Pears'])
 
     useEffect(() => {
-        updateShoppingListArray(JSON.parse(window.localStorage.getItem('shoppingListArray')));
-    }, []);
-    useEffect(() => {
         window.localStorage.setItem('shoppingListArray', JSON.stringify(shoppingListArray));
     }, [shoppingListArray]);
+    useEffect(() => {
+        updateShoppingListArray(JSON.parse(window.localStorage.getItem('shoppingListArray')));
+    }, []);
+   
     
     const handleSubmit = (e) => {
         e.preventDefault() 
